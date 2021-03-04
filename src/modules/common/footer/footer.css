@@ -1,0 +1,13 @@
+.footer{
+    width: 200px;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.social-link:not(:last-child){
+    margin-right: 1rem;
+}
+
+.icon{
+    width: 40px;
+}

@@ -1,0 +1,16 @@
+.header{
+    margin: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link{
+    padding: 10px;
+}
+
+.active-link{
+    background-color: var(--clr2);
+}

@@ -1,0 +1,77 @@
+/* BASE */
+
+.home-view {
+    display: flex;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.intro-name {
+    font-size: 3rem;
+    color: var(--clr2);
+}
+
+.intro-position {
+    font-size: 2rem;
+    color: var(--clr4);
+    opacity: 0.5;
+}
+
+.my-photo {
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-image: url('../../../assets/meidan.jpg');
+    background-position: -100px -300px;
+}
+
+.btn {
+    padding: 10px;
+    border: 1px solid;
+}
+
+.action-btn {
+    color: var(--clr2);
+    border-color: var(--clr4);
+    border-radius: 5px;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 761px) {
+    .home-view {
+        align-items: center;
+        justify-content: space-between;
+        height: 70vh;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 760px) {
+    .home-view {
+        flex-direction: column;
+    }
+    .my-photo {
+        margin: 1.5rem 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .home-view {
+        flex-direction: column;
+    }
+    .intro-name {
+        font-size: 2rem;
+    }
+    .my-photo {
+        margin: 1.5rem 0;
+        max-width: 100%;
+        width: 300px;
+        height: 300px;
+
+    }
+}
